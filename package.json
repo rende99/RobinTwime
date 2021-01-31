@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "delegator.js",
+  "engines": {
+    "node": "12.14.0"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "axios": "^0.21.1",
