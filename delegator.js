@@ -1,7 +1,18 @@
 var server = require('./server');
 var seller = require('./seller');
-
+var http = require('http');
 const fs = require('fs')
+var express = require('express');
+const bodyParser = require('body-parser');
+
+
+var app = express();
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json());
+var server = http.createServer(app);
+const port = process.env.PORT || 5000;
+server.listen(port, () => console.log(`Listening on port ${port}`));
+
 
 setInterval(function(){ 
     var nextDate = new Date();
