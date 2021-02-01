@@ -242,6 +242,8 @@ function ConvertToCSV(objArray) {
     return str;
 }
 
+module.exports = { performRunthrough };
+
 /*
 // MFA LOGIN
 var Robinhood = require('robinhood')({

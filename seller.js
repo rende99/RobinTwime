@@ -90,3 +90,6 @@ async function loadPositions(){
         transactionsCompleted = JSON.parse(data.toString())
     });
 }
+
+module.exports = { performRunthrough };
+
