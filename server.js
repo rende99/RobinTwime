@@ -44,12 +44,14 @@ function performRunthrough(){
             //console.log(trendArray)
             checkMatches(tickerArray, trendArray)
         });
+
+
+        loadTickers();
+        loadPositions();
+        loadMetaData();
      
     });
 
-    loadTickers();
-    loadPositions();
-    loadMetaData();
 }
 
 
